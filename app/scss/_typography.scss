@@ -1,0 +1,50 @@
+$font-sans: 'aktiv-grotesk-std', 'Helvetica Neue', 'Helvetica', sans-serif;
+
+.font-sans2 {
+  font-family: $font-sans;
+  font-weight: 200;
+}
+.font-sans4 {
+  font-family: $font-sans;
+  font-weight: 400;
+}
+.font-sans5 {
+  font-family: $font-sans;
+  font-weight: 500;
+}
+.font-sans7 {
+  font-family: $font-sans;
+  font-weight: 700;
+}
+
+// Type scale
+
+$fontSize-base: 14px;
+
+%fontSize-small {
+  font-size: $fontSize-base * .8725;
+}
+.fontSize-normal {
+  font-size: $fontSize-base;
+}
+.fontSize-medium {
+  font-size: $fontSize-base * 1.25;
+}
+.fontSize-jumbo {
+  font-size: $fontSize-base * 1.25 * 1.25 * 1.25;
+}
+
+// Vertical rhythm
+
+.lineHeight-tighter {
+  line-height: 1.4 * .75;
+}
+.lineHeight-tight {
+  line-height: 1.4 * .8725;
+}
+.lineHeight-normal {
+  line-height: 1.4;
+}
+.lineHeight-loose {
+  line-height: 1.4 * 1.5;
+}

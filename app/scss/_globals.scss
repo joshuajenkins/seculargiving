@@ -1,0 +1,11 @@
+// Globals
+
+.link {
+  text-decoration: none;
+}
+.link:link, .link:visited {
+  color: $color-green;
+}
+.link:hover {
+  color: $color-greenLight;
+}

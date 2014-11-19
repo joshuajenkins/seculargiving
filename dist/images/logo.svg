@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="94px" viewBox="0 0 100 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="logo" sketch:type="MSArtboardGroup">
+            <path d="M47,92 C72.9999993,89.0000028 96,77 92,47 C88,17 73.9999969,-1 47,2 C20.0000031,5 -2,24 2,47 C6,70 21.0000007,94.9999972 47,92 Z" id="Oval-12" fill="#46D8A3" sketch:type="MSShapeGroup"></path>
+            <path d="M54,92 C79.9999993,89.0000028 103,77 99,47 C95,17 80.9999969,-1 54,2 C27.0000031,5 5,24 9,47 C13,70 28.0000007,94.9999972 54,92 Z" id="Oval-13" fill="#46D8D6" sketch:type="MSShapeGroup" transform="translate(53.991571, 46.960554) rotate(-180.000000) translate(-53.991571, -46.960554) "></path>
+            <path d="M55.5917759,1.76994303 C77.0122581,3.18508212 88.4482641,20.3619805 92,47 C96,77 72.9999993,89.0000028 47,92 C46.4590269,92.0624199 45.922816,92.1127182 45.3913671,92.1511649 C23.9708849,90.7360259 12.5348789,73.5591275 8.98314298,46.921108 C4.98314298,16.921108 27.9831437,4.92110515 53.983143,1.92110797 C54.524116,1.85868806 55.060327,1.80838982 55.5917759,1.76994303 Z" id="Oval-15" fill="#13B688" sketch:type="MSShapeGroup"></path>
+            <text id="$-4" sketch:type="MSTextLayer" font-family="Aktiv Grotesk" font-size="20" font-weight="bold" fill="#FFFFFF">
+                <tspan x="25" y="41">$</tspan>
+            </text>
+            <path d="M41.9999999,81.9999998 C41.9999999,81.9999998 56.9999999,73 56.9999999,54.9999999 C56.9999999,36.9999998 41.9999999,27.0000002 41.9999999,27.0000002" id="Oval-10" stroke="#FFFFFF" stroke-width="3" sketch:type="MSShapeGroup" transform="translate(49.500000, 54.500000) rotate(90.000000) translate(-49.500000, -54.500000) "></path>
+            <circle id="Oval-11" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="64" cy="34" r="4"></circle>
+        </g>
+    </g>
+</svg>

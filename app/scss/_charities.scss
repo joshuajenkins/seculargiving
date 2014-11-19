@@ -1,0 +1,79 @@
+// Charities module
+
+.intro {
+  @extend %u-blockCenter;
+  @extend %m-massive-v;
+
+  max-width: 900px;
+}
+.intro-logo {
+  // @extend %u-blockCenter;
+  @extend %m-jumbo-b;
+  @extend %p-medium-l;
+
+  display: block;
+  width: 100px;
+}
+.intro-text {
+  @extend .font-sans7;
+  @extend .fontSize-medium;
+  @extend .lineHeight-loose;
+  @extend %m-zero;
+  @extend %p-medium-l;
+
+  max-width: 580px;
+}
+
+.charities {
+  @extend %u-clearfix;
+  @extend %u-blockCenter;
+  @extend %m-zero-v;
+  @extend %m-jumbo-b;
+  @extend %p-zero;
+
+  max-width: 900px;
+  list-style: none;
+}
+
+.charity {
+  @extend %u-borderBox;
+  @extend %m-zero;
+  @extend %m-jumbo-v;
+  @extend %p-medium-h;
+
+  float: left;
+  max-width: 300px;
+}
+.charity-name {
+  @extend .font-sans5;
+  @extend .fontSize-medium;
+  @extend .lineHeight-normal;
+  @extend %m-normal-b;
+
+  margin-top: 0;
+}
+.charity-location {
+  @extend .font-sans2;
+  @extend %fontSize-small;
+  @extend .lineHeight-normal;
+  @extend %m-normal-b;
+
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  margin-top: 0;
+}
+.charity-description {
+  @extend .font-sans4;
+  @extend %fontSize-normal;
+  @extend .lineHeight-normal;
+}
+.charityLinks {
+  margin: 0;
+}
+.charityLinks-link {
+  @extend .fontSize-normal;
+  @extend .lineHeight-normal;
+
+  display: inline-block;
+}

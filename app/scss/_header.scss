@@ -1,0 +1,54 @@
+.header {
+  @extend %u-borderBox;
+  @extend %m-zero;
+  @extend %m-jumbo-b;
+  @extend %p-medium;
+  @extend %u-clearfix;
+
+  width: 100%;
+  background: linear-gradient(to right, $color-greenLight, $color-green, $color-greenBlue);
+}
+.header-inside {
+  @extend %u-borderBox;
+  @extend %u-blockCenter;
+  @extend %p-medium-h;
+  width: 900px;
+}
+.header-main {
+  @extend %u-borderBox;
+  @extend %m-zero-v;
+  @extend %p-medium-r;
+
+  @extend .font-sans5;
+  @extend .fontSize-medium;
+  @extend .lineHeight-tight;
+
+  width: 50%;
+  float: left;
+
+  position: relative;
+  top: -1px;
+}
+
+.header-nav {
+  @extend %u-borderBox;
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+.nav-link {
+  @extend %m-medium-l;
+
+  @extend .font-sans5;
+  @extend .fontSize-normal;
+  @extend .lineHeight-normal;
+
+  text-transform: uppercase;
+}
+.nav-link:link, .nav-link:visited {
+  color: rgba(255,255,255,0.9);
+}
+.nav-link:hover {
+  color: rgba(255,255,255,1);
+}
