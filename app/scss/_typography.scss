@@ -1,22 +1,5 @@
 $font-sans: 'aktiv-grotesk-std', 'Helvetica Neue', 'Helvetica', sans-serif;
 
-.font-sans2 {
-  font-family: $font-sans;
-  font-weight: 200;
-}
-.font-sans4 {
-  font-family: $font-sans;
-  font-weight: 400;
-}
-.font-sans5 {
-  font-family: $font-sans;
-  font-weight: 500;
-}
-.font-sans7 {
-  font-family: $font-sans;
-  font-weight: 700;
-}
-
 @mixin font-sans($size) {
   font-family: $font-sans;
   font-weight: $size;
@@ -30,35 +13,9 @@ $fontSize-medium: $fontSize-base * 1.25;
 $fontSize-large: $fontSize-base * 1.75;
 $fontSize-jumbo: $fontSize-base * 2.5;
 
-%fontSize-small {
-  font-size: $fontSize-base * .8725;
-}
-.fontSize-normal {
-  font-size: $fontSize-base;
-}
-.fontSize-medium {
-  font-size: $fontSize-base * 1.25;
-}
-.fontSize-jumbo {
-  font-size: $fontSize-base * 1.25 * 1.25 * 1.25;
-}
-
 // Vertical rhythm
 
 $lineHeight-tight: 1.4 * .75;
 $lineHeight-tighter: 1.4 * .75;
 $lineHeight-normal: 1.4;
 $lineHeight-loose: 1.4 * 1.5;
-
-.lineHeight-tighter {
-  line-height: 1.4 * .75;
-}
-.lineHeight-tight {
-  line-height: 1.4 * .8725;
-}
-.lineHeight-normal {
-  line-height: 1.4;
-}
-.lineHeight-loose {
-  line-height: 1.4 * 1.5;
-}

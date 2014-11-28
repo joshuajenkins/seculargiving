@@ -11,63 +11,6 @@ $mu-large:   $marginUnit-base * 2;
 $mu-jumbo:   $marginUnit-base * 3;
 $mu-massive: $marginUnit-base * 5;
 
-// Make sure the units from above are referenced in both variables below in order
-$marginUnits:         zero     small     normal     medium     large     jumbo      massive;
-$marginUnits-values:  $mu-zero $mu-small $mu-normal $mu-medium $mu-large $mu-jumbo  $mu-massive;
-
-// Generate classes
-@for $i from 1 through length($marginUnits) {
-  $m:  nth($marginUnits, $i);
-  $mv: nth($marginUnits-values, $i);
-  %m-#{$m}-t {
-    margin-top:     $mv;
-  }
-  %m-#{$m}-r {
-    margin-right:   $mv;
-  }
-  %m-#{$m}-b {
-    margin-bottom:  $mv;
-  }
-  %m-#{$m}-l {
-    margin-left:    $mv;
-  }
-  %m-#{$m}-v {
-    margin-top:     $mv;
-    margin-bottom:  $mv;
-  }
-  %m-#{$m}-h {
-    margin-left:    $mv;
-    margin-right:   $mv;
-  }
-  %m-#{$m} {
-    margin:         $mv;
-  }
-
-  %p-#{$m}-t {
-    padding-top:    $mv;
-  }
-  %p-#{$m}-r {
-    padding-right:  $mv;
-  }
-  %p-#{$m}-b {
-    padding-bottom: $mv;
-  }
-  %p-#{$m}-l {
-    padding-left:   $mv;
-  }
-  %p-#{$m}-v {
-    padding-top:    $mv;
-    padding-bottom: $mv;
-  }
-  %p-#{$m}-h {
-    padding-left:   $mv;
-    padding-right:  $mv;
-  }
-  %p-#{$m} {
-    padding:        $mv;
-  }
-}
-
 @mixin m-t($m) {
   margin-top: $m;
 }

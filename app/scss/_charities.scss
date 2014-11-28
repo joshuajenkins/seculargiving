@@ -12,13 +12,12 @@
   @include m(0);
   @include p-h($mu-large);
 
-  font-size: $fontSize-medium;
-  color: $color-greenBlue;
-
-  @extend .font-sans5;
-  @extend .lineHeight-loose;
-
   max-width: 580px;
+
+  @include font-sans(500);
+  font-size: $fontSize-medium;
+  line-height: $lineHeight-loose;
+  color: $color-greenBlue;
 }
 
 @media screen and (min-width: 500px) {
@@ -32,19 +31,18 @@
 }
 
 .charities {
-  @extend %u-clearfix;
-  @extend %u-blockCenter;
-  @extend %m-zero-v;
-  @extend %m-jumbo-b;
-  @extend %p-zero;
+  @include u-clearfix();
+  @include u-blockCenter();
+  @include m-t(0);
+  @include m-b($mu-jumbo);
+  @include p(0);
 
   max-width: 900px;
   list-style: none;
 }
 
 .charity {
-  @extend %u-borderBox;
-
+  @include u-borderBox();
   @include m(0);
   @include m-b($mu-jumbo * 2);
   @include p-h($mu-large);
@@ -55,37 +53,36 @@
   max-width: 300px - 3; // Weird width fix I need to look into
 }
 .charity-name {
-  @extend .font-sans5;
-  @extend .fontSize-medium;
-  @extend .lineHeight-normal;
-  @extend %m-normal-b;
+  @include m-t(0);
+  @include m-b($mu-normal);
 
-  margin-top: 0;
+  @include font-sans(500);
+  font-size: $fontSize-medium;
+  line-height: $lineHeight-normal;
 }
 .charity-location {
-  @extend .font-sans2;
-  @extend %fontSize-small;
-  @extend .lineHeight-normal;
-  @extend %m-normal-b;
+  @include m-t(0);
+  @include m-b($mu-normal);
 
+  @include font-sans(200);
+  font-size: $fontSize-small;
+  line-height: $lineHeight-normal;
   color: $color-midGrey;
 
   text-transform: uppercase;
   letter-spacing: 0.2em;
-
-  margin-top: 0;
 }
 .charity-description {
-  @extend .font-sans4;
-  @extend %fontSize-normal;
-  @extend .lineHeight-normal;
+  @include font-sans(400);
+  font-size: $fontSize-base;
+  line-height: $lineHeight-normal;
 }
 .charityLinks {
-  margin: 0;
+  @include m(0);
 }
 .charityLinks-link {
-  @extend .fontSize-normal;
-  @extend .lineHeight-normal;
-
   display: inline-block;
+
+  font-size: $fontSize-base;
+  line-height: $lineHeight-normal;
 }
