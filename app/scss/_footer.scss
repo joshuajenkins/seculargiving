@@ -1,0 +1,16 @@
+// Footer
+
+.footer {
+  @include p-v($mu-massive);
+  background-color: $color-bgGrey;
+}
+
+.footer-text {
+  @include p-h($mu-large);
+  @include m(0);
+  @include m-b($mu-medium);
+  @include font-sans(700);
+
+  font-size: $fontSize-base;
+  line-height: $lineHeight-normal;
+}

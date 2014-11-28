@@ -45,6 +45,11 @@ $fontSize-jumbo: $fontSize-base * 2.5;
 
 // Vertical rhythm
 
+$lineHeight-tight: 1.4 * .75;
+$lineHeight-tighter: 1.4 * .75;
+$lineHeight-normal: 1.4;
+$lineHeight-loose: 1.4 * 1.5;
+
 .lineHeight-tighter {
   line-height: 1.4 * .75;
 }
