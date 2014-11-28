@@ -1,27 +1,34 @@
 // Charities module
-
 .intro {
-  @extend %u-blockCenter;
-  @extend %m-massive-v;
+  @include m-b($mu-large);
+}
+.intro-textContainer {
+  @include u-blockCenter();
+  @include p-v($mu-massive);
 
   max-width: 900px;
 }
-.intro-logo {
-  // @extend %u-blockCenter;
-  @extend %m-jumbo-b;
-  @extend %p-medium-l;
-
-  display: block;
-  width: 100px;
-}
 .intro-text {
-  @extend .font-sans7;
-  @extend .fontSize-medium;
+  @include m(0);
+  @include p-h($mu-large);
+
+  font-size: $fontSize-medium;
+  color: $color-greenBlue;
+
+  @extend .font-sans5;
   @extend .lineHeight-loose;
-  @extend %m-zero;
-  @extend %p-medium-l;
 
   max-width: 580px;
+}
+
+@media screen and (min-width: 500px) {
+
+  .intro-text {
+    font-size: $fontSize-large;
+  }
+  .intro-text--newLine {
+    display: block;
+  }
 }
 
 .charities {
@@ -37,12 +44,15 @@
 
 .charity {
   @extend %u-borderBox;
-  @extend %m-zero;
-  @extend %m-jumbo-v;
-  @extend %p-medium-h;
 
-  float: left;
-  max-width: 300px;
+  @include m(0);
+  @include m-b($mu-jumbo * 2);
+  @include p-h($mu-large);
+
+  display: inline-block;
+  vertical-align: top;
+
+  max-width: 300px - 3; // Weird width fix I need to look into
 }
 .charity-name {
   @extend .font-sans5;
@@ -57,6 +67,8 @@
   @extend %fontSize-small;
   @extend .lineHeight-normal;
   @extend %m-normal-b;
+
+  color: $color-midGrey;
 
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -78,5 +90,5 @@
   display: inline-block;
 }
 .charityLinks-divider {
-  color: rgba(0,0,0,0.2);
+  color: $color-lineGrey;
 }

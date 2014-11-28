@@ -67,3 +67,51 @@ $marginUnits-values:  $mu-zero $mu-small $mu-normal $mu-medium $mu-large $mu-jum
     padding:        $mv;
   }
 }
+
+@mixin m-t($m) {
+  margin-top: $m;
+}
+@mixin m-r($m) {
+  margin-right: $m;
+}
+@mixin m-b($m) {
+  margin-bottom: $m;
+}
+@mixin m-l($m) {
+  margin-left: $m;
+}
+@mixin m-v($m) {
+  margin-top: $m;
+  margin-bottom: $m;
+}
+@mixin m-h($m) {
+  margin-right: $m;
+  margin-left: $m;
+}
+@mixin m($m) {
+  margin: $m;
+}
+
+@mixin p-t($p) {
+  padding-top: $p;
+}
+@mixin p-r($p) {
+  padding-right: $p;
+}
+@mixin p-b($p) {
+  padding-bottom: $p;
+}
+@mixin p-l($p) {
+  padding-left: $p;
+}
+@mixin p-v($p) {
+  padding-top: $p;
+  padding-bottom: $p;
+}
+@mixin p-h($p) {
+  padding-right: $p;
+  padding-left: $p;
+}
+@mixin p($p) {
+  padding: $p;
+}

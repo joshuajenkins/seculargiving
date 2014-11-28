@@ -20,6 +20,10 @@ $font-sans: 'aktiv-grotesk-std', 'Helvetica Neue', 'Helvetica', sans-serif;
 // Type scale
 
 $fontSize-base: 14px;
+$fontSize-small: $fontSize-base * .8725;
+$fontSize-medium: $fontSize-base * 1.25;
+$fontSize-large: $fontSize-base * 1.75;
+$fontSize-jumbo: $fontSize-base * 2.5;
 
 %fontSize-small {
   font-size: $fontSize-base * .8725;
