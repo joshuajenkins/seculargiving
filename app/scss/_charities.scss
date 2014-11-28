@@ -1,10 +1,10 @@
 // Charities module
 .intro {
-  @include m-b($mu-large);
+  @include m-b($mu-massive*2);
 }
 .intro-textContainer {
   @include u-blockCenter();
-  @include p-v($mu-massive);
+  @include p(0);
 
   max-width: 900px;
 }

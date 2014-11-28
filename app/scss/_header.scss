@@ -1,0 +1,10 @@
+.site-header {
+  @include u-blockCenter();
+  @include u-borderBox();
+  @include p-h($mu-large);
+  @include m-t($mu-massive);
+  @include m-b($mu-medium);
+  @include font-sans(200);
+
+  max-width: 900px;
+}

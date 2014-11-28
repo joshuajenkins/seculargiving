@@ -17,6 +17,11 @@ $font-sans: 'aktiv-grotesk-std', 'Helvetica Neue', 'Helvetica', sans-serif;
   font-weight: 700;
 }
 
+@mixin font-sans($size) {
+  font-family: $font-sans;
+  font-weight: $size;
+}
+
 // Type scale
 
 $fontSize-base: 14px;
