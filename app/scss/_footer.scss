@@ -4,7 +4,10 @@
   @include p-v($mu-massive);
   background-color: $color-bgGrey;
 }
-
+.footer-inside {
+  @include u-blockCenter();
+  max-width: 900px;
+}
 .footer-text {
   @include p-h($mu-large);
   @include m(0);
@@ -13,4 +16,7 @@
 
   font-size: $fontSize-base;
   line-height: $lineHeight-normal;
+}
+.footer-text:last-child {
+  @include m-b(0);
 }
