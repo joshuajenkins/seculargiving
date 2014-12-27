@@ -1,0 +1,13 @@
+@import 'normalize';
+@import 'utilities';
+@import 'colors';
+@import 'typography';
+@import 'margins';
+@import 'globals';
+@import 'header';
+@import 'footer';
+@import 'charities';
+
+html {
+  text-rendering: optimizeLegibility;
+}
