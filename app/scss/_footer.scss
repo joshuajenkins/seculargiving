@@ -11,11 +11,11 @@
 .footer-text {
   @include p-h($mu-large);
   @include m(0);
-  @include m-b($mu-medium);
-  @include font-sans(700);
+  @include m-b(0);
+  @include font-sans(400);
 
   font-size: $fontSize-base;
-  line-height: $lineHeight-normal;
+  line-height: $lineHeight;
 }
 .footer-text:last-child {
   @include m-b(0);

@@ -1,35 +1,4 @@
 // Charities module
-.intro {
-  @include m-b($mu-massive*2);
-}
-.intro-textContainer {
-  @include u-blockCenter();
-  @include p(0);
-
-  max-width: 900px;
-}
-.intro-text {
-  @include m(0);
-  @include p-h($mu-large);
-
-  max-width: 580px;
-
-  @include font-sans(500);
-  font-size: $fontSize-medium;
-  line-height: $lineHeight-loose;
-  color: $color-greenLight;
-}
-
-@media screen and (min-width: 500px) {
-
-  .intro-text {
-    font-size: $fontSize-large;
-  }
-  .intro-text--newLine {
-    display: block;
-  }
-}
-
 .charities {
   @include u-clearfix();
   @include u-blockCenter();
@@ -54,35 +23,38 @@
 }
 .charity-name {
   @include m-t(0);
-  @include m-b($mu-normal);
+  @include m-b($mu-small);
 
-  @include font-sans(500);
-  font-size: $fontSize-medium;
-  line-height: $lineHeight-normal;
-}
-.charity-location {
-  @include m-t(0);
-  @include m-b($mu-normal);
-
-  @include font-sans(200);
-  font-size: $fontSize-small;
-  line-height: $lineHeight-normal;
-  color: $color-midGrey;
-
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
+  @include font-sans(700);
+  font-size: $fontSize-base;
+  line-height: $lineHeight;
 }
 .charity-description {
   @include font-sans(400);
+  @include m(0);
+  @include m-t($mu-small);
   font-size: $fontSize-base;
-  line-height: $lineHeight-normal;
+  line-height: $lineHeight;
+  color: $color-darkGrey;
+}
+.charity-location {
+  @include font-sans(500);
+  font-size: $fontSize-small;
+  color: $color-darkGrey;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 .charityLinks {
   @include m(0);
+  @include m-t($mu-small);
+  font-size: $fontSize-small;
 }
 .charityLinks-link {
+  @include font-sans(400);
   display: inline-block;
 
-  font-size: $fontSize-base;
-  line-height: $lineHeight-normal;
+  line-height: $lineHeight;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }

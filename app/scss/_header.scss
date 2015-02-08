@@ -2,9 +2,39 @@
   @include u-blockCenter();
   @include u-borderBox();
   @include p-h($mu-large);
-  @include m-t($mu-massive);
-  @include m-b($mu-medium);
-  @include font-sans(200);
+  @include m-t($mu-massive*2);
+  @include m-b($mu-zero);
+  @include font-sans(400);
+
+  font-size: $fontSize-large;
+  line-height: $lineHeight * 2;
+  max-width: 900px;
+  color: $color-greenLight;
+}
+.intro {
+  @include m-b($mu-massive*2);
+}
+.intro-textContainer {
+  @include u-blockCenter();
+  @include p(0);
 
   max-width: 900px;
+}
+.intro-text {
+  @include m(0);
+  @include p-h($mu-large);
+
+  max-width: 580px;
+
+  @include font-sans(400);
+  font-size: $fontSize-base;
+  line-height: $lineHeight;
+  color: $color-darkGrey;
+}
+
+@media screen and (min-width: 500px) {
+
+  .intro-text--newLine {
+    display: block;
+  }
 }
