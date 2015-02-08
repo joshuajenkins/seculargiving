@@ -7,15 +7,9 @@ $font-sans: 'aktiv-grotesk-std', 'Helvetica Neue', 'Helvetica', sans-serif;
 
 // Type scale
 
-$fontSize-base: 14px;
-$fontSize-small: $fontSize-base * .8725;
-$fontSize-medium: $fontSize-base * 1.25;
-$fontSize-large: $fontSize-base * 1.75;
-$fontSize-jumbo: $fontSize-base * 2.5;
+$fontSize-base:   16px;
+$fontSize-small:  12px;
+$fontSize-large:  28px;
 
 // Vertical rhythm
-
-$lineHeight-tight: 1.4 * .75;
-$lineHeight-tighter: 1.4 * .75;
-$lineHeight-normal: 1.4;
-$lineHeight-loose: 1.4 * 1.5;
+$lineHeight: 22px;
