@@ -39,11 +39,14 @@
 }
 .charity-location {
   @include font-sans(500);
+  @include m-b(-2px);
   font-size: $fontSize-small;
   color: $color-darkGrey;
 
+  line-height: $lineHeight;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  display: inline-block;
 }
 .charityLinks {
   @include m(0);
