@@ -2,14 +2,17 @@
   @include u-blockCenter();
   @include u-borderBox();
   @include p-h($mu-large);
-  @include m-t($mu-massive*2);
-  @include m-b($mu-zero);
-  @include font-sans(400);
+  @include m-t($mu-zero);
+  @include m-b($mu-medium);
+  @include font-sans(200);
 
   font-size: $fontSize-large;
-  line-height: $lineHeight * 2;
+  line-height: 1.1;
   max-width: 900px;
-  color: $color-greenLight;
+  color: rgb(255,255,255);
+  border: 2px solid $color-greenLight;
+
+  background-color: $color-greenLight;
 }
 .intro {
   @include m-b($mu-massive*2);
@@ -32,9 +35,21 @@
   color: $color-darkGrey;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
 
+  .site-header {
+    @include m-t($mu-massive);
+    font-size: $fontSize-large * 3;
+  }
   .intro-text--newLine {
     display: block;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+  .site-header {
+    @include m-t($mu-massive*2);
+    font-size: $fontSize-large * 4;
   }
 }

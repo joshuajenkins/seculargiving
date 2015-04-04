@@ -21,13 +21,18 @@
 
   max-width: 300px - 3; // Weird width fix I need to look into
 }
-.charity-name {
+.charity-name,
+.title-link:link,
+.title-link:visited,
+.title-link:hover {
   @include m-t(0);
   @include m-b($mu-small);
 
   @include font-sans(700);
-  font-size: $fontSize-base;
-  line-height: $lineHeight;
+  color: $color-black;
+  font-size: $fontSize-large;
+  line-height: $lineHeight-heading;
+  text-decoration: none;
 }
 .charity-description {
   @include font-sans(400);

@@ -3,6 +3,7 @@
 .footer {
   @include p-v($mu-massive);
   background-color: $color-bgGrey;
+  text-align: center;
 }
 .footer-inside {
   @include u-blockCenter();
@@ -19,4 +20,16 @@
 }
 .footer-text:last-child {
   @include m-b(0);
+}
+.dividerText {
+  @include m-h($mu-small);
+  display: inline-block;
+}
+
+@media screen and (min-width: 600px) {
+
+  .dividerText {
+    @include m-h($mu-large);
+  }
+
 }
