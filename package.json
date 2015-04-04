@@ -11,7 +11,10 @@
     "gulp-minify-css": "^0.3.11",
     "gulp-sass": "^1.2.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-uglify": "^1.1.0",
+    "gulp-webserver": "^0.9.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
